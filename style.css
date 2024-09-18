@@ -130,7 +130,7 @@ main img {
 
 /* Specific styling for images in home.html */
 .home-page img.home-image {
-  width: 80vw; /* 60% of the viewport width */
+  width: 60vw; /* 60% of the viewport width */
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 0 auto 2%; /* Center the image and add bottom margin */
