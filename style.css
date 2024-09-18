@@ -1,0 +1,321 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Default font size */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 2%;
+}
+
+/* Header Styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+header h1 {
+  font-size: 2rem; /* Larger font size for the main heading */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 3%;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Font size for navigation links */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: fixed; /* Fix the position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background-color: #333; /* Background color for the nav */
+    text-align: center; /* Center text horizontally */
+    z-index: 1000; /* Ensure it is above other content */
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the list */
+  }
+
+  nav ul li {
+    display: block; /* Stack links vertically */
+    margin: 2% 0; /* Space between links */
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem; /* Larger font size for better visibility */
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+/* Main Content Styling */
+main {
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+main section {
+  margin-bottom: 2%;
+}
+
+main img {
+  width: 25vw; /* 25% of the viewport width */
+  height: 25vw; /* 25% of the viewport width to maintain square shape */
+  display: block;
+  margin: 0 auto 2%; /* Center the image and add bottom margin */
+  object-fit: cover; /* Ensure the image covers the area, cropping if necessary */
+}
+
+/* Specific styling for images in home.html */
+.home-page img.home-image {
+  width: 80vw; /* 60% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 2%; /* Center the image and add bottom margin */
+  object-fit: cover; /* Ensure the image covers the area, cropping if necessary */
+}
+
+/* Menu Section Styling */
+.menu-section {
+  background-color: #333;
+  color: #fff;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.menu-section.appetizers,
+.menu-section.main,
+.menu-section.dessert,
+.menu-section.beverages {
+  margin-top: 4%; /* Add more space above the section headings */
+}
+
+.menu-section h3 {
+  font-size: 1.5rem; /* Font size for section headings */
+  font-weight: bold; /* Bold font weight for section headings */
+  margin: 0;
+}
+
+/* Menu List Styling */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2% 0;
+}
+
+.menu-list li {
+  margin-bottom: 1%;
+  font-size: 1rem; /* Font size for menu items */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+form label {
+  margin-top: 1%;
+  font-size: 1rem; /* Font size for form labels */
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 1%;
+  margin-top: 1%;
+  font-size: 1rem; /* Font size for form inputs and textareas */
+}
+
+form textarea {
+  height: 20%;
+}
+
+form button {
+  margin-top: 2%;
+  padding: 1% 2%;
+  font-size: 1rem; /* Font size for form buttons */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+}
+
+footer .social-media {
+  margin: 2% 0; /* Space above and below social media icons */
+}
+
+footer .social-media a {
+  margin: 0 5%;
+  color: #fff;
+}
+
+footer .social-media img {
+  width: 5%;
+  height: auto;
+  filter: invert(100%);
+}
+
+footer nav ul {
+  margin: 2% 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 3%;
+}
+
+footer .back-to-top {
+  margin-top: 1%;
+}
+
+footer .back-to-top a {
+  color: #fff;
+  font-size: 2rem; /* Font size for back-to-top link */
+  text-decoration: none;
+}
+
+footer .back-to-top a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  main img {
+    width: 60vw; /* 40% of the viewport width */
+    height: 40vw; /* 40% of the viewport width to maintain square shape */
+  }
+
+  /* Footer Layout for Mobile Devices */
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer nav ul li {
+    margin: 2% 0; /* Space between links */
+  }
+
+  /* Social Media Icons Spacing for Mobile Devices */
+  footer .social-media {
+    margin: 5% 0; /* Increased margin to add more space above and below */
+  }
+}
+
+/* Social Media Icons Spacing for Desktop Devices */
+@media (min-width: 601px) {
+  footer .social-media {
+    margin: 2% 0; /* Adjust margin for desktop display */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+  .home-page img.home-image {
+    width: 85vw; /* 85% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Reservation Section Styling */
+.reservation-section {
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  padding: 5%; /* Padding inside the section */
+  margin-bottom: 5%; /* Space below the section */
+}
+
+.reservation-section h3 {
+  font-size: 1.5rem; /* Font size for section headings */
+  font-weight: bold; /* Bold font weight for section headings */
+  margin: 0; /* Remove default margin */
+}
+
+.reservation-page img.reservation-image {
+  width: 80%; /* 80% */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 2% auto; /* Center the image and add top margin */
+}
+
+/* Iframe Styling */
+iframe {
+  border: none; /* Remove border */
+  overflow: hidden; /* Hide scrollbars */
+}
